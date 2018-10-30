@@ -1,8 +1,17 @@
 # `react-arithmetic`
 
+
+![npm (scoped)](https://img.shields.io/npm/v/react-arithmetic.svg?style=popout-square)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)
+[![Build Status](https://travis-ci.com/SivanMehta/react-arithmetic.svg?branch=master)](https://travis-ci.com/SivanMehta/react-arithmetic)
+
 A horrible substitute for actual math by (ab)using `React` instead
 
 # Usage
+
+```sh
+npm install react-arithmetic
+```
 
 There are two operations you can perform out of the box `Add` and `Multiply`. You
 can then use these on a `Number` to render an arithmetic operation
@@ -32,7 +41,7 @@ class Mathemagic extends Component {
 
 This will resolve `20`
 
-## Tests [![Build Status](https://travis-ci.com/SivanMehta/react-calculator.svg?branch=master)](https://travis-ci.com/SivanMehta/react-calculator)
+## Tests
 
 ```sh
 npm test
