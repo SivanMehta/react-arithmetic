@@ -1,25 +1,27 @@
-# `react-calculator`
+# `react-arithmetic`
 
-You can go to the [deployed page](https://sivanmehta.github.io/react-calculator/index.html)
-and try to match the color using the RGB sliders.
+A horrible substitute for actual math by using `React` instead
 
-## Running it yourself
+# Usage
 
-There are pre-build assets in `dist/build.js`, so you only actually need to serve
-the landing page to actually play the game
+There are two operations you can perform out of the box `Add` and `Multiply`. You
+can then use these on a `Number` to render an arithmetic operation
 
-```sh
-python -m SimpleHTTPServer
+So you if you wanted to represent `2 * 2 * (1 + 2 + 2)`, you can do it as follows
+
+```js
+<Multiply>
+  <Number value={ 2 } />
+  <Number value={ 2 } />
+  <Add>
+    <Number value={ 1 } />
+    <Number value={ 2 } />
+    <Number value={ 2 } />
+  </Add>
+</Multiply>
 ```
 
-But if you want to play around and re-build the assets at will you will actually
-have to install a few things
-
-```sh
-npm install # get all the dependencies
-npm run build # run webpack
-npm start # start an http server to serve assets
-```
+This will resolve `20`
 
 ## Tests [![Build Status](https://travis-ci.com/SivanMehta/react-calculator.svg?branch=master)](https://travis-ci.com/SivanMehta/react-calculator)
 

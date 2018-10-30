@@ -1,7 +1,7 @@
 {
-  "name": "react-calculator",
+  "name": "react-arithmetic",
   "version": "0.0.0",
-  "description": "calculating in react",
+  "description": "arithmetic in react",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run test:unit",
@@ -16,16 +16,15 @@
     "url": "git+https://github.com/SivanMehta/react-calculator.git"
   },
   "keywords": [
-    "calculator",
-    "webpack",
+    "arithmetic",
     "react"
   ],
   "author": "Sivan Mehta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SivanMehta/react-calculator/issues"
+    "url": "https://github.com/SivanMehta/react-arithmetic/issues"
   },
-  "homepage": "https://github.com/SivanMehta/react-calculator",
+  "homepage": "https://github.com/SivanMehta/react-arithmetic",
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -49,8 +48,6 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.1.0",
-    "redux": "^4.0.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "redux": "^4.0.1"
   }
 }
