@@ -10821,7 +10821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _operands_numbers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./operands/numbers */ "./src/operands/numbers.js");
+/* harmony import */ var _operands__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./operands */ "./src/operands/index.js");
 /* harmony import */ var _operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./operators/arithmetic */ "./src/operators/arithmetic.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -10862,7 +10862,29 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Add(One, Two) = 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["One"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Two, Two) = 16")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Add(Two, Two, One)) = 20")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["One"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Add(One, Two) = 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 1
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Two, Two) = 16")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Add(Two, Two, One)) = 20")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 1
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands__WEBPACK_IMPORTED_MODULE_2__["Number"], {
+        value: 2
+      }))));
     }
   }]);
 
@@ -10898,111 +10920,16 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED
 
 /***/ }),
 
-/***/ "./src/operands/numbers.js":
-/*!*********************************!*\
-  !*** ./src/operands/numbers.js ***!
-  \*********************************/
-/*! exports provided: One, Two, Three */
+/***/ "./src/operands/index.js":
+/*!*******************************!*\
+  !*** ./src/operands/index.js ***!
+  \*******************************/
+/*! exports provided: Number */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "One", function() { return One; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Two", function() { return Two; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Three", function() { return Three; });
-/* harmony import */ var _operand__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./operand */ "./src/operands/operand.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-var One =
-/*#__PURE__*/
-function (_Operand) {
-  _inherits(One, _Operand);
-
-  function One() {
-    _classCallCheck(this, One);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(One).apply(this, arguments));
-  }
-
-  _createClass(One, [{
-    key: "value",
-    value: function value() {
-      return 1;
-    }
-  }]);
-
-  return One;
-}(_operand__WEBPACK_IMPORTED_MODULE_0__["default"]);
-var Two =
-/*#__PURE__*/
-function (_Operand2) {
-  _inherits(Two, _Operand2);
-
-  function Two() {
-    _classCallCheck(this, Two);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Two).apply(this, arguments));
-  }
-
-  _createClass(Two, [{
-    key: "value",
-    value: function value() {
-      return 2;
-    }
-  }]);
-
-  return Two;
-}(_operand__WEBPACK_IMPORTED_MODULE_0__["default"]);
-var Three =
-/*#__PURE__*/
-function (_Operand3) {
-  _inherits(Three, _Operand3);
-
-  function Three() {
-    _classCallCheck(this, Three);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Three).apply(this, arguments));
-  }
-
-  _createClass(Three, [{
-    key: "value",
-    value: function value() {
-      return 3;
-    }
-  }]);
-
-  return Three;
-}(_operand__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-/***/ }),
-
-/***/ "./src/operands/operand.js":
-/*!*********************************!*\
-  !*** ./src/operands/operand.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Operand; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Number", function() { return Number; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -11046,7 +10973,30 @@ function (_Component) {
   return Operand;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
+var Number =
+/*#__PURE__*/
+function (_Operand) {
+  _inherits(Number, _Operand);
 
+  function Number(props) {
+    var _this;
+
+    _classCallCheck(this, Number);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Number).apply(this, arguments));
+    _this._value = props.value;
+    return _this;
+  }
+
+  _createClass(Number, [{
+    key: "value",
+    value: function value() {
+      return this._value;
+    }
+  }]);
+
+  return Number;
+}(Operand);
 
 /***/ }),
 
@@ -11172,6 +11122,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Operation; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11192,6 +11144,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Operation =
 /*#__PURE__*/
 function (_Component) {
@@ -11209,7 +11162,7 @@ function (_Component) {
     /**
      * Method that is overwritten by an actual operation
      * Some starting value for the combination of children
-     * @return {React.Element} starting value;
+     * @returns {React.Element} starting value;
      */
     value: function start() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null);
@@ -11218,13 +11171,15 @@ function (_Component) {
      * Method that is overwritten by an actual operation
      * it takes the children and a given operation
      * to all of them in order
-     * @return {React.Element} some combination of the children
+     * @param  {Any} acc current state of reduction
+     * @param  {Any} cur current child
+     * @returns {Any} how to combine acc and cur
      */
 
   }, {
     key: "apply",
     value: function apply(acc, cur) {
-      return acc;
+      return acc + cur;
     }
   }, {
     key: "render",
@@ -11238,6 +11193,9 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
+Operation.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.element)
+};
 
 /***/ }),
 
