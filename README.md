@@ -1,6 +1,6 @@
-# color-matcher
+# `react-calculator`
 
-You can go to the [deployed page](https://sivanmehta.github.io/color-matcher/index.html)
+You can go to the [deployed page](https://sivanmehta.github.io/react-calculator/index.html)
 and try to match the color using the RGB sliders.
 
 ## Running it yourself
@@ -21,7 +21,7 @@ npm run build # run webpack
 npm start # start an http server to serve assets
 ```
 
-## Tests [![Build Status](https://travis-ci.com/SivanMehta/color-matcher.svg?branch=master)](https://travis-ci.com/SivanMehta/color-matcher)
+## Tests [![Build Status](https://travis-ci.com/SivanMehta/react-calculator.svg?branch=master)](https://travis-ci.com/SivanMehta/react-calculator)
 
 ```sh
 npm test

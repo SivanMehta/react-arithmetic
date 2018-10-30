@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 export default class App extends Component {
   render() {
     return (
-      <Fragment>
+      <div className='container'>
         what
-      </Fragment>
+      </div>
     );
   }
 }
