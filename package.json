@@ -1,0 +1,56 @@
+{
+  "name": "react-calculator",
+  "version": "0.0.0",
+  "description": "calculating in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "mocha --require test/setup test/*.test.js",
+    "lint": "eslint-godaddy-react ./src ./test",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SivanMehta/react-calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "webpack",
+    "react"
+  ],
+  "author": "Sivan Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SivanMehta/react-calculator/issues"
+  },
+  "homepage": "https://github.com/SivanMehta/react-calculator",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "assume": "^2.1.0",
+    "babel-loader": "^8.0.4",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^4.19.1",
+    "eslint-config-godaddy-react": "^2.2.0",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-mocha": "^4.12.1",
+    "eslint-plugin-react": "^7.11.1",
+    "http-server": "^0.11.1",
+    "jsdom": "^9.8.3",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
