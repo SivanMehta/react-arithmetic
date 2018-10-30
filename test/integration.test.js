@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { mount } from 'enzyme';
 import assume from 'assume';
-import { Number } from '../src/operands';
-import { Add, Multiply } from '../src/operators/arithmetic';
+import { Number, Add, Multiply } from '../src/';
 
 class Addition extends Component {
   render() {
