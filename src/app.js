@@ -5,7 +5,10 @@ export default class App extends Component {
   render() {
     return (
       <div className='container'>
-        what
+        <h1>What is this?</h1>
+        <Fragment>
+          { this.props.children }
+        </Fragment>
       </div>
     );
   }
