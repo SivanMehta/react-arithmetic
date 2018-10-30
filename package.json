@@ -1,56 +1,73 @@
 {
-  "name": "react-calculator",
+  "name": "react-arithmetic",
   "version": "0.0.0",
-  "description": "calculating in react",
-  "main": "index.js",
+  "description": "arithmetic in react",
+  "main": "lib/",
+  "browser": "lib/",
+  "module": "src/",
   "scripts": {
     "test": "npm run lint && npm run test:unit",
     "test:unit": "mocha --require test/setup test/*.test.js",
-    "lint": "eslint-godaddy-react ./src ./test",
-    "build": "webpack",
-    "build:watch": "webpack --watch",
-    "start": "http-server"
+    "test:debug": "mocha --inspect-brk --require test/setup test/*.test.js",
+    "prepublish": "mkdir -p lib && babel ./src/ -d ./lib",
+    "build": "npm run lint && npm run prepublish",
+    "test": "npm run lint && npm run test:unit",
+    "lint": "eslint-godaddy-react ./src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SivanMehta/react-calculator.git"
   },
   "keywords": [
-    "calculator",
-    "webpack",
+    "arithmetic",
     "react"
   ],
   "author": "Sivan Mehta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SivanMehta/react-calculator/issues"
+    "url": "https://github.com/SivanMehta/react-arithmetic/issues"
   },
-  "homepage": "https://github.com/SivanMehta/react-calculator",
+  "homepage": "https://github.com/SivanMehta/react-arithmetic",
   "dependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "assume": "^2.1.0",
-    "babel-loader": "^8.0.4",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "eslint": "^4.19.1",
-    "eslint-config-godaddy-react": "^2.2.0",
-    "eslint-plugin-json": "^1.2.1",
-    "eslint-plugin-mocha": "^4.12.1",
-    "eslint-plugin-react": "^7.11.1",
-    "http-server": "^0.11.1",
-    "jsdom": "^9.8.3",
-    "mocha": "^5.2.0",
-    "nyc": "^13.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "^5.1.0",
-    "redux": "^4.0.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "assume": "^2.0.1",
+    "assume-react": "^0.2.0",
+    "assume-sinon": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^8.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.17.0",
+    "eslint-config-godaddy-react": "^2.2.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^5.0.0",
+    "eslint-plugin-react": "^7.6.1",
+    "intl": "~1.2.3",
+    "jsdom": "^9.5.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "object-assign": "~4.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-intl": "^2.4.0",
+    "sinon": "^6.0.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-object-rest-spread"
+    ],
+    "presets": [
+      "babel-preset-env",
+      "babel-preset-react"
+    ]
   }
 }

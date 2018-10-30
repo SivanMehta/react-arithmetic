@@ -1,6 +1,8 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { Number } from './operands';
+import { Add, Multiply } from './operators/arithmetic'
 
-import App from './app';
-
-render(<App />, document.getElementById('content'));
+export {
+  Number,
+  Add,
+  Multiply
+};
