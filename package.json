@@ -1,6 +1,6 @@
 {
   "name": "react-arithmetic",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "arithmetic in react",
   "main": "lib/",
   "browser": "lib/",
@@ -11,7 +11,6 @@
     "test:debug": "mocha --inspect-brk --require test/setup test/*.test.js",
     "prepublish": "mkdir -p lib && babel ./src/ -d ./lib",
     "build": "npm run lint && npm run prepublish",
-    "test": "npm run lint && npm run test:unit",
     "lint": "eslint-godaddy-react ./src"
   },
   "repository": {
