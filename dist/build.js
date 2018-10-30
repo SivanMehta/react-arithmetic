@@ -10862,7 +10862,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "What is this?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["One"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Add(One, Two) = 3")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["One"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Two, Two) = 16")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "Multiply(Two, Two, Add(Two, Two, One)) = 20")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Multiply"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operators_arithmetic__WEBPACK_IMPORTED_MODULE_3__["Add"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["One"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_operands_numbers__WEBPACK_IMPORTED_MODULE_2__["Two"], null))));
     }
   }]);
 
@@ -11054,12 +11054,13 @@ function (_Component) {
 /*!*************************************!*\
   !*** ./src/operators/arithmetic.js ***!
   \*************************************/
-/*! exports provided: Add */
+/*! exports provided: Add, Multiply */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Add", function() { return Add; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Multiply", function() { return Multiply; });
 /* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./operation */ "./src/operators/operation.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/server */ "./node_modules/react-dom/server.browser.js");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_1__);
@@ -11096,15 +11097,9 @@ function (_Operation) {
   }
 
   _createClass(Numeric, [{
-    key: "start",
-    value: function start() {
-      return 0;
-    }
-  }, {
     key: "apply",
     value: function apply(acc, child) {
       var content = react_dom_server__WEBPACK_IMPORTED_MODULE_1___default.a.renderToString(child);
-      debugger;
       return this.process(acc, parseInt(content, 10));
     }
   }]);
@@ -11124,14 +11119,43 @@ function (_Numeric) {
   }
 
   _createClass(Add, [{
+    key: "start",
+    value: function start() {
+      return 0;
+    }
+  }, {
     key: "process",
     value: function process(acc, cur) {
-      debugger;
       return acc + cur;
     }
   }]);
 
   return Add;
+}(Numeric);
+var Multiply =
+/*#__PURE__*/
+function (_Numeric2) {
+  _inherits(Multiply, _Numeric2);
+
+  function Multiply() {
+    _classCallCheck(this, Multiply);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Multiply).apply(this, arguments));
+  }
+
+  _createClass(Multiply, [{
+    key: "start",
+    value: function start() {
+      return 1;
+    }
+  }, {
+    key: "process",
+    value: function process(acc, cur) {
+      return acc * cur;
+    }
+  }]);
+
+  return Multiply;
 }(Numeric);
 
 /***/ }),
