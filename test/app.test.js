@@ -9,7 +9,7 @@ function renderApp(extras = {}) {
   return mount(<App { ...{ ...props, ...extras } }/>);
 }
 
-describe('App Layout', function () {
+describe('"App"', function () {
   let app;
   beforeEach(function () {
     app = renderApp();
