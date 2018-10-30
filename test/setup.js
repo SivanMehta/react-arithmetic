@@ -1,10 +1,5 @@
 require('enzyme/withDom');
-require('@babel/register')({
-  presets: [[
-    '@babel/preset-env',
-    { targets: { node: true }}
-  ]]
-});
+require('babel-register');
 const Enzyme = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');
 

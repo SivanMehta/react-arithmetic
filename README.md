@@ -1,6 +1,6 @@
 # `react-arithmetic`
 
-A horrible substitute for actual math by using `React` instead
+A horrible substitute for actual math by (ab)using `React` instead
 
 # Usage
 
